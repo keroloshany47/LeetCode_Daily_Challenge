@@ -27,16 +27,3 @@ Practicing one problem per day helps me:
 
 - The goal is **daily improvement**, not perfection
 
-
-```
-python
-# LeetCode: Two Sum
-# Difficulty: Easy
-# Link: https://leetcode.com/problems/two-sum/
-#
-# Approach:
-# - Use a hashmap to store seen values
-# - Check if target - current exists in map
-#
-# Time Complexity: O(n)
-# Space Complexity: O(n)
