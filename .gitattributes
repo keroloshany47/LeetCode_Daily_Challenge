@@ -1,0 +1,12 @@
+
+*.md linguist-documentation
+*.txt linguist-documentation
+*.json linguist-data
+*.xml linguist-data
+
+
+*.py linguist-language=Python
+
+
+docs/* linguist-documentation
+tests/* linguist-detectable=false
