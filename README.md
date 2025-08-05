@@ -21,8 +21,7 @@ Practicing one problem per day helps me:
 
 -  Python 
 -  C++
--  C
-
+  
 ---
 
 - The goal is **daily improvement**, not perfection
