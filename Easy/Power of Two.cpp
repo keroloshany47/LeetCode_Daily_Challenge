@@ -1,3 +1,4 @@
+// Solution 1
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
@@ -8,5 +9,14 @@ public:
         }
         
         return n == 1; // If we end with 1, it's a power of two
+    }
+};
+
+
+//Solution 2
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        return n > 0 && (n & (n - 1)) == 0;
     }
 };
