@@ -12,11 +12,25 @@ public:
     }
 };
 
-
+//---------------------------------------------------------------------------------------------------------------
 //Solution 2
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
         return n > 0 && (n & (n - 1)) == 0;
+    }
+};
+//---------------------------------------------------------------------------------------------------------------
+//  solution 3
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        if (n <= 0) return false; // powers of two must be positive
+
+        for (; n % 2 == 0; n /= 2) {
+            // keep dividing by 2 while it's even
+        }
+
+        return n == 1; // if we end at 1, it's a power of two
     }
 };
