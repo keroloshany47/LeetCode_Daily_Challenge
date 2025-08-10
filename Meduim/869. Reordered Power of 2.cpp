@@ -10,15 +10,15 @@ public:
     }
 
     bool reorderedPowerOf2(int n) {
-        std::string s = std::to_string(n);
-        std::sort(s.begin(), s.end());
+        string s = to_string(n);
+        sort(s.begin(), s.end());
 
         do {
             if (s[0] == '0') continue; 
 
-            int num = std::stoi(s);
+            int num = stoi(s);
             if (isPowerOfTwo(num)) return true;
-        } while (std::next_permutation(s.begin(), s.end()));
+        } while (next_permutation(s.begin(), s.end()));
 
         return false;
     }
