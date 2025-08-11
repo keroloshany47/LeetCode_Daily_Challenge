@@ -54,3 +54,4 @@ private:
         return result;
     }
 };
+// this is claude solution i find some issue in my solution so this is the perfect one .
