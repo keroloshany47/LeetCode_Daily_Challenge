@@ -3,7 +3,8 @@
 
 Welcome to my **LeetCode Daily Challenge** repository!  
 Here, I solve one problem every day from [LeetCode](https://leetcode.com/) using **Python**, **C**, or **C++**, 
-and I organize them by difficulty: **🟢Easy**, **🟠Medium**, and **🔴Hard**.
+and I organize them by difficulty:
+**🟢Easy**, **🟠Medium**, and **🔴Hard**.
 
 ---
 
