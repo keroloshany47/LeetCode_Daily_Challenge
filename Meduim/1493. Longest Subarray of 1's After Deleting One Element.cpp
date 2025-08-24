@@ -7,14 +7,14 @@ public:
             if (nums[right] == 0) 
                 zeros++;
 
-            // لو عدد الأصفار في النافذة > 1 لازم نرجع left
+           
             while (zeros > 1) {
                 if (nums[left] == 0) 
                     zeros--;
                 left++;
             }
 
-            // طول النافذة - 1 (لأن لازم نحذف عنصر واحد)
+            
             res = max(res, right - left);
         }
 
