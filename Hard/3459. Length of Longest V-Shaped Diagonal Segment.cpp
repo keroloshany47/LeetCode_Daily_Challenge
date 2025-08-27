@@ -1,4 +1,4 @@
-
+// this is AI solution i couldn't solve it 
 class Solution {
 public:
     int lenOfVDiagonal(vector<vector<int>>& grid) {
