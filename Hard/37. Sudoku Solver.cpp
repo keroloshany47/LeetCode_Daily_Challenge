@@ -1,3 +1,5 @@
+
+// this is leetcode solution i couldn't solve it 
 class Solution {
     int n = 3, N = 9;
     int rows[9][10] = {}, cols[9][10] = {}, boxes[9][10] = {};
