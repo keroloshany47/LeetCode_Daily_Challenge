@@ -54,3 +54,50 @@ public:
         backtrack(0, 0);
     }
 };
+
+
+
+
+
+
+
+class Solution {
+public:
+    // Function to check if we can place 'c' in board[row][col]
+    bool isValid(vector<vector<char>>& board, int row, int col, char c) {
+        for (int i = 0; i < 9; i++) {
+            // Check row
+            if (board[row][i] == c) return false;
+            // Check column
+            if (board[i][col] == c) return false;
+            // Check 3x3 block
+            int blockRow = 3 * (row / 3) + i / 3;
+            int blockCol = 3 * (col / 3) + i % 3;
+            if (board[blockRow][blockCol] == c) return false;
+        }
+        return true;
+    }
+
+    // Backtracking function to solve Sudoku
+    bool solve(vector<vector<char>>& board) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] == '.') { // Empty cell
+                    for (char c = '1'; c <= '9'; c++) { // Try digits 1-9
+                        if (isValid(board, i, j, c)) {
+                            board[i][j] = c; // Place digit
+                            if (solve(board)) return true; // Continue
+                            board[i][j] = '.'; // Backtrack
+                        }
+                    }
+                    return false; // No valid digit found
+                }
+            }
+        }
+        return true; // Solved
+    }
+
+    void solveSudoku(vector<vector<char>>& board) {
+        solve(board);
+    }
+};
