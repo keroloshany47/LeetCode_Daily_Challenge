@@ -1,3 +1,5 @@
+
+// ai optimize it this is not my code
 class Solution {
 public:
     double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {
