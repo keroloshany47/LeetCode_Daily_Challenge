@@ -6,7 +6,7 @@ public:
         if (min_step == abs(y - z)) {
             return 0; 
         } 
-        else if (min_step > abs(y - z)) {
+        else if (min_step < abs(y - z)) {
             return 1; 
         } 
         else {
